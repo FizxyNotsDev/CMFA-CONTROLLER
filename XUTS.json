@@ -1,0 +1,230 @@
+{
+  "log": {
+    "level": "info",
+    "timestamp": true
+  },
+  "dns": {
+    "servers": [
+      {
+        "tag": "dns_internet",
+        "type": "tls",
+        "server": "1.1.1.1",
+        "detour": "Internet"
+      },
+      {
+        "tag": "dns_direct",
+        "type": "https",
+        "server": "1.1.1.1",
+        "detour": "direct"
+      },
+      {
+        "tag": "dns_local",
+        "type": "local"
+      },
+      {
+        "tag": "dns_refused",
+        "type": "predefined",
+        "responses": [
+          {
+            "rcode": "REFUSED"
+          }
+        ]
+      },
+      {
+        "tag": "fakeip",
+        "type": "fakeip",
+        "inet4_range": "198.18.0.0/15",
+        "inet6_range": "fc00::/18"
+      }
+    ],
+    "rules": [
+      {
+        "query_type": [
+          "A",
+          "AAAA"
+        ],
+        "server": "fakeip"
+      }
+    ]
+  },
+  "route": {
+    "default_domain_resolver": {
+      "server": "dns_local",
+      "rewrite_ttl": 60,
+      "client_subnet": "1.1.1.1"
+    },
+    "rules": [
+      {
+        "inbound": "tun-in",
+        "action": "sniff"
+      },
+      {
+        "protocol": "dns",
+        "action": "hijack-dns"
+      },
+      {
+        "ip_cidr": [
+          "0.0.0.0/8",
+          "172.64.149.213/10",
+          "127.0.0.0/8",
+          "198.18.0.0/15",
+          "fc00::/18",
+          "::/128",
+          "::1/128"
+        ],
+        "action": "reject"
+      },
+      {
+        "port": 853,
+        "network": "tcp",
+        "action": "reject"
+      },
+      {
+        "port": [
+          443,
+          853
+        ],
+        "network": "udp",
+        "action": "reject"
+      },
+      {
+        "ip_is_private": true,
+        "outbound": "direct"
+      }
+    ],
+    "final": "Internet",
+    "auto_detect_interface": true
+  },
+  "inbounds": [
+    {
+      "type": "tun",
+      "tag": "tun-in",
+      "address": [
+        "172.16.0.1/30",
+        "fd00::1/126"
+      ],
+      "mtu": 1492,
+      "auto_route": true,
+      "strict_route": true,
+      "stack": "system"
+    }
+  ],
+  "outbounds": [
+    {
+      "type": "selector",
+      "tag": "Internet",
+      "outbounds": [
+        "(ID) CV Rumahweb Indonesia @BitzBlack",
+        "(SG) Akamai Connected Cloud @BitzBlack",
+        "(SG) Aeza International @BitzBlack",
+        "(ID) 21/F Ciputra World 1 (DBS Tower) @BitzBlack",
+        "Best Latency",
+        "direct"
+      ],
+      "default": "(ID) CV Rumahweb Indonesia @BitzBlack"
+    },
+    {
+      "type": "urltest",
+      "tag": "Best Latency",
+      "outbounds": [
+        "(ID) CV Rumahweb Indonesia @BitzBlack",
+        "(SG) Akamai Connected Cloud @BitzBlack",
+        "(SG) Aeza International @BitzBlack",
+        "(ID) 21/F Ciputra World 1 (DBS Tower) @BitzBlack"
+      ],
+      "url": "https://www.gstatic.com/generate_204",
+      "interval": "1m0s"
+    },
+    {
+      "type": "direct",
+      "tag": "direct"
+    },
+    {
+      "type": "vless",
+      "tag": "(ID) CV Rumahweb Indonesia @BitzBlack",
+      "server": "ava.game.naver.com",
+      "server_port": 443,
+      "uuid": "aaaaaaa1-bbbb-4ccc-accc-eeeeeeeeeee1",
+      "tls": {
+        "enabled": true,
+        "insecure": true,
+        "server_name": "ava.game.naver.com.free.bansos4u.biz.id"
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/Free/TG-at-BitzBlack/203.194.112.119-8443",
+        "headers": {
+          "Host": "ava.game.naver.com.free.bansos4u.biz.id"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "(SG) Akamai Connected Cloud @BitzBlack",
+      "server": "ava.game.naver.com",
+      "server_port": 443,
+      "uuid": "aaaaaaa1-bbbb-4ccc-accc-eeeeeeeeeee1",
+      "tls": {
+        "enabled": true,
+        "insecure": true,
+        "server_name": "ava.game.naver.com.free.bansos4u.biz.id"
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/Free/TG-at-BitzBlack/172.104.40.56-587",
+        "headers": {
+          "Host": "ava.game.naver.com.free.bansos4u.biz.id"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "(SG) Aeza International @BitzBlack",
+      "server": "ava.game.naver.com",
+      "server_port": 443,
+      "uuid": "aaaaaaa1-bbbb-4ccc-accc-eeeeeeeeeee1",
+      "tls": {
+        "enabled": true,
+        "insecure": true,
+        "server_name": "ava.game.naver.com.free.bansos4u.web.id"
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/Free/TG-at-BitzBlack/83.147.252.186-443",
+        "headers": {
+          "Host": "ava.game.naver.com.free.bansos4u.web.id"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "(ID) 21/F Ciputra World 1 (DBS Tower) @BitzBlack",
+      "server": "ava.game.naver.com",
+      "server_port": 443,
+      "uuid": "aaaaaaa1-bbbb-4ccc-accc-eeeeeeeeeee1",
+      "tls": {
+        "enabled": true,
+        "insecure": true,
+        "server_name": "ava.game.naver.com.free.bansos4u.biz.id"
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/Free/TG-at-BitzBlack/149.129.250.8-443",
+        "headers": {
+          "Host": "ava.game.naver.com.free.bansos4u.biz.id"
+        }
+      }
+    }
+  ],
+  "experimental": {
+    "cache_file": {
+      "enabled": true,
+      "path": "cache.db"
+    },
+    "clash_api": {
+      "external_controller": "127.0.0.1:9090",
+      "external_ui": "ui",
+      "default_mode": "rule"
+    }
+  }
+}
