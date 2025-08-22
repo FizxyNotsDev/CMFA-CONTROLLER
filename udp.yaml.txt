@@ -1,0 +1,35 @@
+proxies:
+  - name: "🇮🇩 natanvpn"
+    type: vless
+    server: quiz.int.vidio.com
+    port: 80
+    uuid: 183267ff-dfee-487a-9d6e-e63184cb3c00
+    cipher: auto
+    udp: true
+    tls: false
+    network: ws
+    ws-opts:
+      path: /vless
+      headers:
+        Host: 3.round.web.id
+
+  - name: "🇮🇩 natanvpn2"
+    type: vless
+    server: quiz.int.vidio.com
+    port: 80
+    uuid: ccbbf583-b415-493f-bbb7-e0fd5f17a274
+    cipher: auto
+    udp: true
+    tls: false
+    network: ws
+    ws-opts:
+      path: /vless
+      headers:
+        Host: 4.round.web.id
+
+proxy-groups:
+  - name: "UDP"
+    type: select
+    proxies:
+      - "🇮🇩 natanvpn"
+      - "🇮🇩 natanvpn2"
