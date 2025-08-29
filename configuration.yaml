@@ -53,8 +53,6 @@ proxy-groups:
   type: select
   use:
   - tcp
-  proxies:
-  - ☀ SMART
 
 - name: UDP-SMART
   type: select
