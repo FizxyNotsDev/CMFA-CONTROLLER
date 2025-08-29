@@ -1,140 +1,211 @@
 proxies:
-- name: "Acak 1 - 🇸🇬 SG Oracle Corporation"
-  type: vless
-  server: quiz.int.vidio.com
-  port: 80
-  uuid: a6cb6b90-9eb7-4e94-82a1-baa19518c044
-  udp: true
-  tls: false
-  network: ws
-  servername: quiz.int.vidio.com.nuclear.biz.id
-  ws-opts:
-    path: /138.2.107.107-443
-    headers:
-      Host: quiz.int.vidio.com.nuclear.biz.id
+  - name: "🇸🇬 SG Green Floid LLC CDN NTLS"
+    type: vless
+    server: quiz.int.vidio.com
+    port: 80
+    uuid: ef923b2a-e061-4833-a286-d25aa0531b7d
+    udp: true
+    tls: false
+    network: ws
+    servername: quiz.int.vidio.com.worker.biz.id
+    ws-opts:
+      path: "/5.34.176.119-81"
+      headers:
+        Host: quiz.int.vidio.com.worker.biz.id
 
-- name: "Acak 2 - 🇸🇬 SG Oracle Corporation"
-  type: vless
-  server: quiz.int.vidio.com
-  port: 80
-  uuid: 14215cbf-3910-4119-a3a4-75293e2921f9
-  udp: true
-  tls: false
-  network: ws
-  servername: quiz.int.vidio.com.nuclear.biz.id
-  ws-opts:
-    path: /138.2.69.236-23334
-    headers:
-      Host: quiz.int.vidio.com.nuclear.biz.id
+  - name: "🇸🇬 SG Oracle Cloud CDN NTLS"
+    type: vless
+    server: quiz.int.vidio.com
+    port: 80
+    uuid: bebc7e90-1a29-4593-bdd9-285c632c9195
+    udp: true
+    tls: false
+    network: ws
+    servername: quiz.int.vidio.com.worker.biz.id
+    ws-opts:
+      path: "/152.69.220.136-53076"
+      headers:
+        Host: quiz.int.vidio.com.worker.biz.id
 
-- name: "Acak 3 - 🇸🇬 SG Aeza International"
-  type: vless
-  server: quiz.int.vidio.com
-  port: 80
-  uuid: 08d5af2b-1602-45dc-b07b-2702a9227cf8
-  udp: true
-  tls: false
-  network: ws
-  servername: quiz.int.vidio.com.nuclear.biz.id
-  ws-opts:
-    path: /83.147.252.97-443
-    headers:
-      Host: quiz.int.vidio.com.nuclear.biz.id
+  - name: "🇸🇬 SG Oracle Public Cloud CDN NTLS"
+    type: vless
+    server: quiz.int.vidio.com
+    port: 80
+    uuid: 1e987ab3-cbf8-4827-9298-e5aed2f77792
+    udp: true
+    tls: false
+    network: ws
+    servername: quiz.int.vidio.com.worker.biz.id
+    ws-opts:
+      path: "/168.138.170.211-53702"
+      headers:
+        Host: quiz.int.vidio.com.worker.biz.id
 
-- name: "Acak 4 - 🇸🇬 SG VPLS SIN1"
-  type: vless
-  server: quiz.int.vidio.com
-  port: 80
-  uuid: d32ba072-af5b-4ad2-a251-e60581210a91
-  udp: true
-  tls: false
-  network: ws
-  servername: quiz.int.vidio.com.nuclear.biz.id
-  ws-opts:
-    path: /110.34.164.39-28758
-    headers:
-      Host: quiz.int.vidio.com.nuclear.biz.id
+  - name: "🇸🇬 SG Oracle Corporation CDN NTLS"
+    type: vless
+    server: quiz.int.vidio.com
+    port: 80
+    uuid: d909d7b2-c148-4d9c-a03f-8b550c2ff641
+    udp: true
+    tls: false
+    network: ws
+    servername: quiz.int.vidio.com.worker.biz.id
+    ws-opts:
+      path: "/129.150.36.188-53435"
+      headers:
+        Host: quiz.int.vidio.com.worker.biz.id
 
-- name: "Acak 5 - 🇸🇬 SG Oracle Corporation"
-  type: vless
-  server: quiz.int.vidio.com
-  port: 80
-  uuid: e23c6402-1514-42e4-a411-91240a2e8b43
-  udp: true
-  tls: false
-  network: ws
-  servername: quiz.int.vidio.com.nuclear.biz.id
-  ws-opts:
-    path: /138.2.95.33-17465
-    headers:
-      Host: quiz.int.vidio.com.nuclear.biz.id
+  - name: "🇸🇬 SG Datacenter CDN NTLS"
+    type: vless
+    server: quiz.int.vidio.com
+    port: 80
+    uuid: a3654bc2-ab85-40c4-a95d-b633b0d72e99
+    udp: true
+    tls: false
+    network: ws
+    servername: quiz.int.vidio.com.worker.biz.id
+    ws-opts:
+      path: "/64.235.45.131-443"
+      headers:
+        Host: quiz.int.vidio.com.worker.biz.id
 
-- name: "Acak 6 - 🇸🇬 SG DigitalOcean LLC"
-  type: vless
-  server: quiz.int.vidio.com
-  port: 80
-  uuid: d31b685f-4c64-4a70-868b-ed41e266c4e0
-  udp: true
-  tls: false
-  network: ws
-  servername: quiz.int.vidio.com.nuclear.biz.id
-  ws-opts:
-    path: /128.199.134.152-443
-    headers:
-      Host: quiz.int.vidio.com.nuclear.biz.id
+  - name: "🇸🇬 SG UCUL-SG CDN NTLS"
+    type: vless
+    server: quiz.int.vidio.com
+    port: 80
+    uuid: 1718de8b-f718-4d62-af62-574bceec5276
+    udp: true
+    tls: false
+    network: ws
+    servername: quiz.int.vidio.com.worker.biz.id
+    ws-opts:
+      path: "/164.52.2.100-443"
+      headers:
+        Host: quiz.int.vidio.com.worker.biz.id
 
-- name: "Acak 7 - 🇸🇬 SG Zappie Host LLC"
-  type: vless
-  server: quiz.int.vidio.com
-  port: 80
-  uuid: 5f5a51ba-eb4a-477d-9a9d-0c23bf4f0353
-  udp: true
-  tls: false
-  network: ws
-  servername: quiz.int.vidio.com.nuclear.biz.id
-  ws-opts:
-    path: /83.142.30.5-2096
-    headers:
-      Host: quiz.int.vidio.com.nuclear.biz.id
+  - name: "🇸🇬 SG DigitalOcean LLC CDN NTLS"
+    type: vless
+    server: quiz.int.vidio.com
+    port: 80
+    uuid: 185dca5d-f61d-4ca1-a08c-f259ca4a1022
+    udp: true
+    tls: false
+    network: ws
+    servername: quiz.int.vidio.com.worker.biz.id
+    ws-opts:
+      path: "/167.99.73.22-443"
+      headers:
+        Host: quiz.int.vidio.com.worker.biz.id
 
-- name: "Acak 8 - 🇸🇬 SG OVH Singapore PTE LTD"
-  type: vless
-  server: quiz.int.vidio.com
-  port: 80
-  uuid: 4c3d05e0-9904-4f75-bcd4-ac271c6962c3
-  udp: true
-  tls: false
-  network: ws
-  servername: quiz.int.vidio.com.nuclear.biz.id
-  ws-opts:
-    path: /51.79.158.58-2053
-    headers:
-      Host: quiz.int.vidio.com.nuclear.biz.id
+  - name: "🇸🇬 SG Akamai Connected Cloud"
+    type: vless
+    server: quiz.int.vidio.com
+    port: 80
+    uuid: aaaaaaa1-bbbb-4ccc-accc-eeeeeeeeeee1
+    udp: true
+    tls: false
+    network: ws
+    servername: quiz.int.vidio.com.vpn.gratizz.biz.id
+    ws-opts:
+      path: "/Free/TG-at-BitzBlack/172.104.40.56-587"
+      headers:
+        Host: quiz.int.vidio.com.vpn.gratizz.biz.id
 
-- name: "Acak 9 - 🇸🇬 SG DigitalOcean LLC"
-  type: vless
-  server: quiz.int.vidio.com
-  port: 80
-  uuid: f66b96ac-9f1b-44a8-9fdf-36238ef1de1c
-  udp: true
-  tls: false
-  network: ws
-  servername: quiz.int.vidio.com.nuclear.biz.id
-  ws-opts:
-    path: /128.199.237.143-443
-    headers:
-      Host: quiz.int.vidio.com.nuclear.biz.id
+proxies:
+  - name: "🇮🇩 ID MITRA VISIONER PRATAMA CDN NTLS"
+    type: vless
+    server: quiz.vidio.com
+    port: 80
+    uuid: 73166dc7-cb81-42fb-8b25-f9299d56f174
+    cipher: none
+    udp: true
+    tls: false
+    network: ws
+    ws-opts:
+      path: "/206.84.101.83-8443"
+      headers:
+        Host: quiz.vidio.com.worker.biz.id
 
-- name: "Acak 10 - 🇸🇬 SG Oracle Corporation"
-  type: vless
-  server: quiz.int.vidio.com
-  port: 80
-  uuid: 5cb90b1f-c3f5-4096-a81e-136dd8581db1
-  udp: true
-  tls: false
-  network: ws
-  servername: quiz.int.vidio.com.nuclear.biz.id
-  ws-opts:
-    path: /138.2.77.179-30018
-    headers:
-      Host: quiz.int.vidio.com.nuclear.biz.id
+  - name: "🇮🇩 ID 21F Ciputra World 1 DBS CDN NTLS"
+    type: vless
+    server: quiz.vidio.com
+    port: 80
+    uuid: 62a00507-caf4-4246-9c48-87b57632eae2
+    cipher: none
+    udp: true
+    tls: false
+    network: ws
+    ws-opts:
+      path: "/149.129.250.8-443"
+      headers:
+        Host: quiz.vidio.com.worker.biz.id
+
+  - name: "🇮🇩 ID Linode CDN NTLS"
+    type: vless
+    server: quiz.vidio.com
+    port: 80
+    uuid: 13e09401-99e5-479f-8178-907932c9ff83
+    cipher: none
+    udp: true
+    tls: false
+    network: ws
+    ws-opts:
+      path: "/172.232.232.58-443"
+      headers:
+        Host: quiz.vidio.com.worker.biz.id
+
+  - name: "🇮🇩 ID FieX v1 CDN NTLS"
+    type: vless
+    server: quiz.vidio.com
+    port: 80
+    uuid: c2b51d93-8745-40b5-a30c-a657a72f7b5e
+    cipher: none
+    udp: true
+    tls: false
+    network: ws
+    ws-opts:
+      path: "/159.60.146.81-443"
+      headers:
+        Host: quiz.vidio.com.worker.biz.id
+
+  - name: "🇮🇩 ID FieX v2 CDN NTLS"
+    type: vless
+    server: quiz.vidio.com
+    port: 80
+    uuid: 7ca9259b-ab33-4344-b49b-0ad05e0980cb
+    cipher: none
+    udp: true
+    tls: false
+    network: ws
+    ws-opts:
+      path: "/159.60.146.82-443"
+      headers:
+        Host: quiz.vidio.com.worker.biz.id
+
+  - name: "🇮🇩 ID Indo Kaopu Cloud CDN NTLS"
+    type: vless
+    server: quiz.vidio.com
+    port: 80
+    uuid: b42c358b-34ee-41aa-a834-fe57c7a508c3
+    cipher: none
+    udp: true
+    tls: false
+    network: ws
+    ws-opts:
+      path: "/154.90.48.27-56362"
+      headers:
+        Host: quiz.vidio.com.worker.biz.id
+
+  - name: "🇮🇩 ID CV Rumahweb Indonesia CDN NTLS"
+    type: vless
+    server: quiz.vidio.com
+    port: 80
+    uuid: 570a2c7a-fb7d-4a43-a6d5-d569d605ab42
+    cipher: none
+    udp: true
+    tls: false
+    network: ws
+    ws-opts:
+      path: "/203.194.112.119-2053"
+      headers:
+        Host: quiz.vidio.com.worker.biz.id
