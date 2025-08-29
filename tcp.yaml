@@ -111,7 +111,6 @@ proxies:
       headers:
         Host: quiz.int.vidio.com.vpn.gratizz.biz.id
 
-proxies:
   - name: "🇮🇩 ID MITRA VISIONER PRATAMA CDN NTLS"
     type: vless
     server: quiz.vidio.com
