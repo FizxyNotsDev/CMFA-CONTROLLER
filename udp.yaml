@@ -1,35 +1,33 @@
-proxies:
-  - name: "🇮🇩 natanvpn"
+outbounds:
+  - name: "🇸🇬 DigitalOcean, LLC"
     type: vless
-    server: quiz.int.vidio.com
+    server: quiz.vidio.com
     port: 80
-    uuid: 183267ff-dfee-487a-9d6e-e63184cb3c00
-    cipher: auto
-    udp: true
-    tls: false
+    uuid: 9c21770f-1a14-4ebd-858c-145d58f32fcb
     network: ws
-    ws-opts:
+    transport:
+      type: websocket
       path: /vless
-      headers:
-        Host: 3.round.web.id
+      host: 5.round.web.id
+    security: none
+    udp: true
 
-  - name: "🇮🇩 natanvpn2"
+  - name: "🇮🇩 PT Intercloud Digital Inovasi"
     type: vless
-    server: quiz.int.vidio.com
+    server: quiz.vidio.com
     port: 80
-    uuid: ccbbf583-b415-493f-bbb7-e0fd5f17a274
-    cipher: auto
-    udp: true
-    tls: false
+    uuid: a4f9aa77-d04d-4e09-ad7b-e98a256795ca
     network: ws
-    ws-opts:
+    transport:
+      type: websocket
       path: /vless
-      headers:
-        Host: 4.round.web.id
+      host: 4.round.web.id
+    security: none
+    udp: true
 
 proxy-groups:
-  - name: "UDP"
+  - name: "Auto-Select"
     type: select
     proxies:
-      - "🇮🇩 natanvpn"
-      - "🇮🇩 natanvpn2"
+      - "🇸🇬 DigitalOcean, LLC"
+      - "🇮🇩 PT Intercloud Digital Inovasi"
