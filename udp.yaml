@@ -33,10 +33,3 @@ proxies:
     path: /vless
     headers:
       Host: 4.round.web.id
-
-proxy-groups:
-  - name: "Auto-Select"
-    type: select
-    proxies:
-      - "🇸🇬 DigitalOcean, LLC"
-      - "🇮🇩 PT Intercloud Digital Inovasi"
