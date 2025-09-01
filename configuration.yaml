@@ -63,6 +63,8 @@ proxy-groups:
 
   - name: UDP-SMART
     type: select
+    proxies:
+      - ☀ SMART    
     use:
       - udp
 
