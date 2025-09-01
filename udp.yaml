@@ -1,3 +1,4 @@
+proxies:
 - name: 🇸🇬 DigitalOcean, LLC
   type: vless
   server: quiz.vidio.com
