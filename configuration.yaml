@@ -8,13 +8,19 @@ mode: rule
 log-level: silent
 allow-lan: true
 external-controller: 0.0.0.0:9090
-secret: 
+secret: ""
 bind-address: "*"
 unified-delay: true
+
+# LightGBM Auto Update
+lgbm-auto-update: true
+lgbm-update-interval: 72
+lgbm-url: "https://github.com/vernesong/mihomo/releases/download/LightGBM-Model/Model.bin"
 
 profile:
   store-selected: true
   store-fake-ip: true
+  smart-collector-size: 100
 
 dns:
   enable: true
@@ -38,48 +44,50 @@ proxy-providers:
     health-check:
       enable: true
       url: http://www.gstatic.com/generate_204
-      interval: 36000
-
+      interval: 300  # periksa tiap 5 menit
   udp:
     type: file
     url: "https://raw.githubusercontent.com/FizxyNotsDev/CMFA-CONTROLLER/refs/heads/main/udp.yaml"
     health-check:
       enable: true
       url: http://www.gstatic.com/generate_204
-      interval: 36000
+      interval: 300  # periksa tiap 5 menit
 
 proxy-groups:
-- name: TCP-SMART
-  type: select
-  use:
-  - tcp
+  - name: TCP-SMART
+    type: select
+    use:
+      - tcp
 
-- name: UDP-SMART
-  type: select
-  use:
-  - udp
+  - name: UDP-SMART
+    type: select
+    use:
+      - udp
 
-- name: ☀ SMART
-  type: smart
-  include-all-providers: true
-  strategy: sticky-sessions
-  sample-rate: 1
-  hidden: true
-  icon: "https://raw.githubusercontent.com/taamarin/any-icon/main/uploads/pulse.png"
+  - name: ☀ SMART
+    type: smart
+    include-all-providers: true
+    strategy: round-robin         # otomatis pindah node saat yang aktif mati
+    sample-rate: 1
+    hidden: true
+    icon: "https://raw.githubusercontent.com/taamarin/any-icon/main/uploads/pulse.png"
+    uselightgbm: true             # aktifkan prediksi ML
+    collectdata: true             # kumpulkan data untuk model
+    policy-priority: "TCP-SMART:1.0;UDP-SMART:0.9"
 
-- name: 🔰 Select
-  type: select
-  proxies:
-    - TCP-SMART
-    - UDP-SMART
-    - ☀ SMART
-    - DIRECT
+  - name: 🔰 Select
+    type: select
+    proxies:
+      - TCP-SMART
+      - UDP-SMART
+      - ☀ SMART
+      - DIRECT
 
-- name: 🌐 Global
-  type: select
-  proxies:
-    - 🔰 Select
-    - DIRECT
+  - name: 🌐 Global
+    type: select
+    proxies:
+      - 🔰 Select
+      - DIRECT
 
 rule-providers:
   mrs-youtube:
@@ -104,9 +112,9 @@ rule-providers:
     interval: 86400
 
 rules:
-- AND,((NETWORK,udp),(OR,((DST-PORT,443/80),(RULE-SET,mrs-youtube)))),REJECT
-- AND,((NETWORK,udp),(OR,((DST-PORT,443/80),(RULE-SET,mrs-instagram)))),REJECT
-- AND,((NETWORK,udp),(OR,((DST-PORT,443/80),(RULE-SET,mrs-tiktok)))),REJECT
-- NETWORK,udp,UDP-SMART
-- IN-TYPE,INNER,TCP-SMART
-- MATCH,TCP-SMART
+  - AND,((NETWORK,udp),(OR,((DST-PORT,443/80),(RULE-SET,mrs-youtube)))),REJECT
+  - AND,((NETWORK,udp),(OR,((DST-PORT,443/80),(RULE-SET,mrs-instagram)))),REJECT
+  - AND,((NETWORK,udp),(OR,((DST-PORT,443/80),(RULE-SET,mrs-tiktok)))),REJECT
+  - NETWORK,udp,UDP-SMART
+  - IN-TYPE,INNER,TCP-SMART
+  - MATCH,TCP-SMART
