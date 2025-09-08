@@ -120,7 +120,6 @@ rule-providers:
     path: ./ruleset/mrs-tiktok.yaml
     interval: 86400
 
-  rule-providers:
   ads:
     type: http
     behavior: domain
