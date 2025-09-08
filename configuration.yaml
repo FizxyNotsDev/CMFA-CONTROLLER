@@ -109,7 +109,7 @@ rule-providers:
   mrs-instagram:
     type: http
     behavior: classical
-    url: https://raw.githubusercontent.com/malikshi/openclash-rule/main/instagram.yaml
+    url: https://raw.githubusercontent.com/privacy-protection-tools/anti-AD/master/anti-ad-clash.yaml
     path: ./ruleset/mrs-instagram.yaml
     interval: 86400
 
