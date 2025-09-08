@@ -123,8 +123,8 @@ rule-providers:
   ads:
     type: http
     behavior: domain
-    path: ./ruleset/ads.yaml
     url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/ads.mrs
+    path: ./ruleset/ads.yaml
     interval: 86400  
 
 rules:
