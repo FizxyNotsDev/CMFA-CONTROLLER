@@ -66,6 +66,13 @@ proxy-groups:
     use:
       - udp
 
+  - name: BLOCK-ADS
+    type: select
+    proxies:
+      - ☀ SMART
+      - DIRECT
+      - REJECT      
+
   - name: ☀ SMART
     type: smart
     include-all-providers: true
@@ -113,10 +120,19 @@ rule-providers:
     path: ./ruleset/mrs-tiktok.yaml
     interval: 86400
 
+  rule-providers:
+  ads:
+    type: http
+    behavior: domain
+    path: ./ruleset/ads.yaml
+    url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/ads.mrs
+    interval: 86400  
+
 rules:
   - AND,((NETWORK,udp),(OR,((DST-PORT,443/80),(RULE-SET,mrs-youtube)))),REJECT
   - AND,((NETWORK,udp),(OR,((DST-PORT,443/80),(RULE-SET,mrs-instagram)))),REJECT
   - AND,((NETWORK,udp),(OR,((DST-PORT,443/80),(RULE-SET,mrs-tiktok)))),REJECT
   - NETWORK,udp,UDP-SMART
   - IN-TYPE,INNER,TCP-SMART
+  - RULE-SET,ads,BLOCK-ADS
   - MATCH,TCP-SMART
