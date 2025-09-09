@@ -122,7 +122,7 @@ rule-providers:
 
   ads:
     type: http
-    behavior: domain
+    behavior: classical
     url: https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geosite/category-ads-all.srs
     path: ./ruleset/ads.yaml
     interval: 86400  
