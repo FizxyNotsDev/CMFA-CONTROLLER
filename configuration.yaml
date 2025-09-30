@@ -176,6 +176,14 @@ proxy-groups:
       - MIX
     icon: "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/chatgpt(balck).png"   
 
+  - name: 🔞 NsfwBLOCK
+    type: select
+    proxies:
+      - DIRECT
+      - REJECT
+    use:
+      - MIX
+    icon: "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/ad(6).png"    
 
   - name: 🛑 AdsBLOCK
     type: select
@@ -205,6 +213,8 @@ rules:
   - PROCESS-NAME,com.openai.chatgpt,🤖 ChatGPT
 #AdsBLOCK
   - RULE-SET,rule_basicads,🛑 AdsBLOCK
+#NsfwBlock
+  - RULE-SET,oisd_nsfw🔞,🔞 NsfwBLOCK
 #Selector
   - MATCH,🎛️ SELECTOR  
   
@@ -217,3 +227,11 @@ rule-providers:
     url: >-
       https://raw.githubusercontent.com/malikshi/open_clash/main/rule_provider/rule_basicads.yaml
     interval: 43200
+
+  oisd_nsfw🔞:
+    type: http
+    behavior: domain
+    format: text
+    path: "./rule_provider/oisd_nsfw.txt"
+    url: https://raw.githubusercontent.com/zzzt27/clash-AdsBlock/main/oisd_nsfw.txt
+    interval: 86400
