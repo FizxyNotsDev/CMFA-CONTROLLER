@@ -153,14 +153,14 @@ proxies:
     server: quiz.vidio.com
     port: 80
     type: vless
-    uuid: 8515f674-2d11-491a-a1ca-f4b0e855f698
+    uuid: 04b3240d-d87b-4227-8006-519435069dcd
     cipher: auto
     tls: false
     skip-cert-verify: false
-    servername: sing-box.lol
+    servername: 3.round.web.id
     network: ws
     udp: true
     ws-opts:
-      path: /put-any-path-here/buy-vless-ws-pm-telegram-at-synricha
+      path: /vless
       headers:
-        Host: sing-box.lol
+        Host: 3.round.web.id
