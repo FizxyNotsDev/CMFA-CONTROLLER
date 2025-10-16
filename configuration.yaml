@@ -130,7 +130,7 @@ dns:
 proxy-providers:
   CLOUDFLARE:
     type: http
-    url: "https://raw.githubusercontent.com/FizxyNotsDev/CMFA-CONTROLLER/refs/heads/main/MIX.yaml"
+    url: "https://raw.githubusercontent.com/FizxyNotsDev/CMFA-CONTROLLER/refs/heads/main/CLOUDFLARE.yaml"
     path: ./proxy_providers/CLOUDFLARE.yaml
     health-check:
       enable: true
@@ -141,7 +141,7 @@ proxy-providers:
 proxy-providers:
   PREMIUM:
     type: http
-    url: "https://raw.githubusercontent.com/FizxyNotsDev/CMFA-CONTROLLER/refs/heads/main/MIX.yaml"
+    url: "https://raw.githubusercontent.com/FizxyNotsDev/CMFA-CONTROLLER/refs/heads/main/PREMIUM.yaml"
     path: ./proxy_providers/PREMIUM.yaml
     health-check:
       enable: true
