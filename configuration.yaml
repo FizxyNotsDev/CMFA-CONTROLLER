@@ -199,19 +199,19 @@ proxy-groups:
   - name: 🔞 NsfwBLOCK
     type: select
     proxies:
+      - ⛈️ CLOUDFLARE
+      - ⛅ PREMIUM
       - DIRECT
       - REJECT
-    use:
-      - MIX
     icon: "https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/others/18Plus.png"    
 
   - name: 🛑 AdsBLOCK
     type: select
     proxies:
+      - ⛈️ CLOUDFLARE
+      - ⛅ PREMIUM
       - DIRECT
       - REJECT
-    use:
-      - MIX
     icon: "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/ad(6).png"    
 
   - name: ⚡ BEST-PING
