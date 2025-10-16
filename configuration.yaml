@@ -128,10 +128,21 @@ dns:
 
 #𝙋𝙍𝙊𝙓𝙔 𝙋𝙍𝙊𝙑𝙄𝘿𝙀𝙍𝙎
 proxy-providers:
-  MIX:
+  CLOUDFLARE:
     type: http
     url: "https://raw.githubusercontent.com/FizxyNotsDev/CMFA-CONTROLLER/refs/heads/main/MIX.yaml"
-    path: ./proxy_providers/MIX.yaml
+    path: ./proxy_providers/CLOUDFLARE.yaml
+    health-check:
+      enable: true
+      url: "http://www.gstatic.com/generate_204"
+      interval: 36000
+      icon: "https://raw.githubusercontent.com/taamarin/any-icon/main/uploads/sunlight.png"
+
+proxy-providers:
+  PREMIUM:
+    type: http
+    url: "https://raw.githubusercontent.com/FizxyNotsDev/CMFA-CONTROLLER/refs/heads/main/MIX.yaml"
+    path: ./proxy_providers/PREMIUM.yaml
     health-check:
       enable: true
       url: "http://www.gstatic.com/generate_204"
@@ -144,15 +155,27 @@ proxy-groups:
     type: select
     proxies:
       - ⚡ BEST-PING
+      - ⛈️ CLOUDFLARE
+      - ⛅ PREMIUM
+      
       - DIRECT
+    icon: "https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/apps/select.png"   
+
+   - name: ⛈️ CLOUDFLARE
+    type: select
     use:
       - MIX
-    icon: "https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/apps/select.png"   
+    icon: "https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/apps/WhatsApp.png"   
+
+  - name: ⛅ PREMIUM
+    type: select
+    use:
+      - MIX
+    icon: "https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/apps/WhatsApp.png"   
 
   - name: 🗯 WA
     type: select
     proxies:
-      - 🎛️ SELECTOR
       - DIRECT
     use:
       - MIX
@@ -161,7 +184,6 @@ proxy-groups:
   - name: 🎮 GAMES
     type: select
     proxies:
-      - 🎛️ SELECTOR
       - DIRECT
     use:
       - MIX
@@ -170,7 +192,6 @@ proxy-groups:
   - name: 🤖 ChatGPT
     type: select
     proxies:
-      - 🎛️ SELECTOR
       - DIRECT
     use:
       - MIX
