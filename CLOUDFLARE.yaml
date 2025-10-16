@@ -1,151 +1,196 @@
 proxies:
-  - name: "Digitalocean, LLC 🇸🇬"
+  - name: 🇸🇬 ZENLA-1 WS TLS [144.24.78.162]
     server: ava.game.naver.com
     port: 443
     type: vless
-    uuid: ZEROXNXX-XXXXXX-XXX
+    uuid: fc60147e-76b8-4bc5-b691-90b2da79e3d2
     cipher: auto
     tls: true
     skip-cert-verify: true
-    servername: ava.game.naver.com.wildcard.zerostore.org
+    servername: ava.game.naver.com.nautica.foolvpn.me
     network: ws
     ws-opts:
-      path: /vless=68.183.227.180=443
+      path: /144.24.78.162-443
       headers:
-        Host: ava.game.naver.com.wildcard.zerostore.org
+        Host: ava.game.naver.com.nautica.foolvpn.me
     udp: true
-  - name: "Amazon.com, Inc. 🇸🇬"
+  - name: 🇸🇬 Alibaba Cloud - SG WS TLS [47.74.254.191]
     server: ava.game.naver.com
     port: 443
     type: vless
-    uuid: ZEROXNXX-XXXXXX-XXX
+    uuid: fc60147e-76b8-4bc5-b691-90b2da79e3d2
     cipher: auto
     tls: true
     skip-cert-verify: true
-    servername: ava.game.naver.com.wildcard.zerostore.org
+    servername: ava.game.naver.com.nautica.foolvpn.me
     network: ws
     ws-opts:
-      path: /vless=54.255.217.120=8192
+      path: /47.74.254.191-8900
       headers:
-        Host: ava.game.naver.com.wildcard.zerostore.org
+        Host: ava.game.naver.com.nautica.foolvpn.me
     udp: true
-  - name: Oracle Corporation 🇸🇬
+  - name: 🇸🇬 Oracle Corporation WS TLS [146.235.18.248]
     server: ava.game.naver.com
     port: 443
     type: vless
-    uuid: ZEROXNXX-XXXXXX-XXX
+    uuid: fc60147e-76b8-4bc5-b691-90b2da79e3d2
     cipher: auto
     tls: true
     skip-cert-verify: true
-    servername: ava.game.naver.com.wildcard.zerostore.org
+    servername: ava.game.naver.com.nautica.foolvpn.me
     network: ws
     ws-opts:
-      path: /vless=168.138.189.91=443
+      path: /146.235.18.248-45137
       headers:
-        Host: ava.game.naver.com.wildcard.zerostore.org
+        Host: ava.game.naver.com.nautica.foolvpn.me
     udp: true
-  - name: Datacamp Limited 🇸🇬
+  - name: 🇸🇬 Oracle Corporation WS TLS [138.2.89.238]
     server: ava.game.naver.com
     port: 443
     type: vless
-    uuid: ZEROXNXX-XXXXXX-XXX
+    uuid: fc60147e-76b8-4bc5-b691-90b2da79e3d2
     cipher: auto
     tls: true
     skip-cert-verify: true
-    servername: ava.game.naver.com.wildcard.zerostore.org
+    servername: ava.game.naver.com.nautica.foolvpn.me
     network: ws
     ws-opts:
-      path: /vless=45.88.42.34=2053
+      path: /138.2.89.238-43254
       headers:
-        Host: ava.game.naver.com.wildcard.zerostore.org
+        Host: ava.game.naver.com.nautica.foolvpn.me
     udp: true
-  - name: Shenzhen Tencent 🇸🇬
+  - name: 🇸🇬 Oracle Svenska AB WS TLS [213.35.108.135]
     server: ava.game.naver.com
     port: 443
     type: vless
-    uuid: ZEROXNXX-XXXXXX-XXX
+    uuid: fc60147e-76b8-4bc5-b691-90b2da79e3d2
     cipher: auto
     tls: true
     skip-cert-verify: true
-    servername: ava.game.naver.com.wildcard.zerostore.org
+    servername: ava.game.naver.com.nautica.foolvpn.me
     network: ws
     ws-opts:
-      path: /vless=43.156.27.180=8443
+      path: /213.35.108.135-12596
       headers:
-        Host: ava.game.naver.com.wildcard.zerostore.org
+        Host: ava.game.naver.com.nautica.foolvpn.me
     udp: true
-  - name: Pt Pusat Media 🇮🇩
+  - name: 🇸🇬 DigitalOcean WS TLS [178.128.80.43]
     server: ava.game.naver.com
     port: 443
     type: vless
-    uuid: ZEROXNXX-XXXXXX-XXX
+    uuid: fc60147e-76b8-4bc5-b691-90b2da79e3d2
     cipher: auto
     tls: true
     skip-cert-verify: true
-    servername: ava.game.naver.com.wildcard.zerostore.org
+    servername: ava.game.naver.com.nautica.foolvpn.me
     network: ws
     ws-opts:
-      path: /vless=103.6.207.108=8080
+      path: /178.128.80.43-443
       headers:
-        Host: ava.game.naver.com.wildcard.zerostore.org
+        Host: ava.game.naver.com.nautica.foolvpn.me
     udp: true
-  - name: Rumahweb 🇮🇩
+  - name: 🇸🇬 Alibaba Cloud LLC WS TLS [47.245.95.160]
     server: ava.game.naver.com
     port: 443
     type: vless
-    uuid: ZEROXNXX-XXXXXX-XXX
+    uuid: fc60147e-76b8-4bc5-b691-90b2da79e3d2
     cipher: auto
     tls: true
     skip-cert-verify: true
-    servername: ava.game.naver.com.wildcard.zerostore.org
+    servername: ava.game.naver.com.nautica.foolvpn.me
     network: ws
     ws-opts:
-      path: /vless=203.194.112.119=8443
+      path: /47.245.95.160-1443
       headers:
-        Host: ava.game.naver.com.wildcard.zerostore.org
+        Host: ava.game.naver.com.nautica.foolvpn.me
     udp: true
-  - name: Alibaba us Technology 🇮🇩
+  - name: 🇸🇬 Greencloud LLC WS TLS [194.127.193.240]
     server: ava.game.naver.com
     port: 443
     type: vless
-    uuid: ZEROXNXX-XXXXXX-XXX
+    uuid: fc60147e-76b8-4bc5-b691-90b2da79e3d2
     cipher: auto
     tls: true
     skip-cert-verify: true
-    servername: ava.game.naver.com.wildcard.zerostore.org
+    servername: ava.game.naver.com.nautica.foolvpn.me
     network: ws
     ws-opts:
-      path: /vless=149.129.250.8=443
+      path: /194.127.193.240-50791
       headers:
-        Host: ava.game.naver.com.wildcard.zerostore.org
+        Host: ava.game.naver.com.nautica.foolvpn.me
     udp: true
-  - name: PT. Telekomunikasi 🇮🇩
+  - name: 🇸🇬 Alibaba Cloud LLC WS TLS [47.236.119.190]
     server: ava.game.naver.com
     port: 443
     type: vless
-    uuid: ZEROXNXX-XXXXXX-XXX
+    uuid: fc60147e-76b8-4bc5-b691-90b2da79e3d2
     cipher: auto
     tls: true
     skip-cert-verify: true
-    servername: ava.game.naver.com.wildcard.zerostore.org
+    servername: ava.game.naver.com.nautica.foolvpn.me
     network: ws
     ws-opts:
-      path: /vless=36.95.152.58=12137
+      path: /47.236.119.190-51342
       headers:
-        Host: ava.game.naver.com.wildcard.zerostore.org
+        Host: ava.game.naver.com.nautica.foolvpn.me
     udp: true
-  - name: Kaopu Cloud Hk 🇮🇩
+  - name: 🇸🇬 Oracle Corporation WS TLS [129.150.49.58]
     server: ava.game.naver.com
     port: 443
     type: vless
-    uuid: ZEROXNXX-XXXXXX-XXX
+    uuid: fc60147e-76b8-4bc5-b691-90b2da79e3d2
     cipher: auto
     tls: true
     skip-cert-verify: true
-    servername: ava.game.naver.com.wildcard.zerostore.org
+    servername: ava.game.naver.com.nautica.foolvpn.me
     network: ws
     ws-opts:
-      path: /vless=156.244.1.250=8443
+      path: /129.150.49.58-18650
       headers:
-        Host: ava.game.naver.com.wildcard.zerostore.org
+        Host: ava.game.naver.com.nautica.foolvpn.me
+    udp: true
+  - name: 🇸🇬 UCUL-SG WS TLS [164.52.2.100]
+    server: ava.game.naver.com
+    port: 443
+    type: vless
+    uuid: fc60147e-76b8-4bc5-b691-90b2da79e3d2
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: ava.game.naver.com.nautica.foolvpn.me
+    network: ws
+    ws-opts:
+      path: /164.52.2.100-443
+      headers:
+        Host: ava.game.naver.com.nautica.foolvpn.me
+    udp: true
+  - name: 🇸🇬 UCUL-SG WS TLS [164.52.2.98]
+    server: ava.game.naver.com
+    port: 443
+    type: vless
+    uuid: fc60147e-76b8-4bc5-b691-90b2da79e3d2
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: ava.game.naver.com.nautica.foolvpn.me
+    network: ws
+    ws-opts:
+      path: /164.52.2.98-443
+      headers:
+        Host: ava.game.naver.com.nautica.foolvpn.me
+    udp: true
+  - name: 🇸🇬 UCUL-SG WS TLS [164.52.2.99]
+    server: ava.game.naver.com
+    port: 443
+    type: vless
+    uuid: fc60147e-76b8-4bc5-b691-90b2da79e3d2
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: ava.game.naver.com.nautica.foolvpn.me
+    network: ws
+    ws-opts:
+      path: /164.52.2.99-443
+      headers:
+        Host: ava.game.naver.com.nautica.foolvpn.me
     udp: true
