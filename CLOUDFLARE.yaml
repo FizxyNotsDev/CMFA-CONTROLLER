@@ -1,196 +1,241 @@
 proxies:
-  - name: 🇸🇬 ZENLA-1 WS TLS [144.24.78.162]
+  - name: (ID)+Rumahweb+🇮🇩
     server: ava.game.naver.com
     port: 443
     type: vless
-    uuid: fc60147e-76b8-4bc5-b691-90b2da79e3d2
+    uuid: 9ed77c45-d91d-4df1-9697-5e8009d40dec
     cipher: auto
     tls: true
     skip-cert-verify: true
-    servername: ava.game.naver.com.nautica.foolvpn.me
+    servername: ava.game.naver.com.lsvly.dpdns.org
     network: ws
     ws-opts:
-      path: /144.24.78.162-443
+      path: /id-rmhwb
       headers:
-        Host: ava.game.naver.com.nautica.foolvpn.me
+        Host: ava.game.naver.com.lsvly.dpdns.org
     udp: true
-  - name: 🇸🇬 Alibaba Cloud - SG WS TLS [47.74.254.191]
+  - name: (ID)+Amazon.com,+Inc+🇮🇩
     server: ava.game.naver.com
     port: 443
     type: vless
-    uuid: fc60147e-76b8-4bc5-b691-90b2da79e3d2
+    uuid: 25921119-72ea-469b-8116-b214760f0008
     cipher: auto
     tls: true
     skip-cert-verify: true
-    servername: ava.game.naver.com.nautica.foolvpn.me
+    servername: ava.game.naver.com.lsvly.dpdns.org
     network: ws
     ws-opts:
-      path: /47.74.254.191-8900
+      path: /id-amz
       headers:
-        Host: ava.game.naver.com.nautica.foolvpn.me
+        Host: ava.game.naver.com.lsvly.dpdns.org
     udp: true
-  - name: 🇸🇬 Oracle Corporation WS TLS [146.235.18.248]
+  - name: (ID)+PT.+Telekomunikasi+🇮🇩
     server: ava.game.naver.com
     port: 443
     type: vless
-    uuid: fc60147e-76b8-4bc5-b691-90b2da79e3d2
+    uuid: 914ada37-13eb-48f5-aa2d-b4913060483c
     cipher: auto
     tls: true
     skip-cert-verify: true
-    servername: ava.game.naver.com.nautica.foolvpn.me
+    servername: ava.game.naver.com.lsvly.dpdns.org
     network: ws
     ws-opts:
-      path: /146.235.18.248-45137
+      path: /id-tksi
       headers:
-        Host: ava.game.naver.com.nautica.foolvpn.me
+        Host: ava.game.naver.com.lsvly.dpdns.org
     udp: true
-  - name: 🇸🇬 Oracle Corporation WS TLS [138.2.89.238]
+  - name: (ID)+Pt+Pusat+Media+🇮🇩
     server: ava.game.naver.com
     port: 443
     type: vless
-    uuid: fc60147e-76b8-4bc5-b691-90b2da79e3d2
+    uuid: e1ba8d64-8b3f-432f-9d07-ac2bf931cfc2
     cipher: auto
     tls: true
     skip-cert-verify: true
-    servername: ava.game.naver.com.nautica.foolvpn.me
+    servername: ava.game.naver.com.lsvly.dpdns.org
     network: ws
     ws-opts:
-      path: /138.2.89.238-43254
+      path: /id-pusat
       headers:
-        Host: ava.game.naver.com.nautica.foolvpn.me
+        Host: ava.game.naver.com.lsvly.dpdns.org
     udp: true
-  - name: 🇸🇬 Oracle Svenska AB WS TLS [213.35.108.135]
+  - name: (MY)+Terabix+Technologies+🇲🇾
     server: ava.game.naver.com
     port: 443
     type: vless
-    uuid: fc60147e-76b8-4bc5-b691-90b2da79e3d2
+    uuid: be487bad-d270-4660-9ec8-a65f2aae4f36
     cipher: auto
     tls: true
     skip-cert-verify: true
-    servername: ava.game.naver.com.nautica.foolvpn.me
+    servername: ava.game.naver.com.lsvly.dpdns.org
     network: ws
     ws-opts:
-      path: /213.35.108.135-12596
+      path: /my-tera
       headers:
-        Host: ava.game.naver.com.nautica.foolvpn.me
+        Host: ava.game.naver.com.lsvly.dpdns.org
     udp: true
-  - name: 🇸🇬 DigitalOcean WS TLS [178.128.80.43]
+  - name: (MY)+Kaopu+Cloud+🇲🇾
     server: ava.game.naver.com
     port: 443
     type: vless
-    uuid: fc60147e-76b8-4bc5-b691-90b2da79e3d2
+    uuid: 23316729-983c-459b-bc71-1a7ec062d97d
     cipher: auto
     tls: true
     skip-cert-verify: true
-    servername: ava.game.naver.com.nautica.foolvpn.me
+    servername: ava.game.naver.com.lsvly.dpdns.org
     network: ws
     ws-opts:
-      path: /178.128.80.43-443
+      path: /my-kc
       headers:
-        Host: ava.game.naver.com.nautica.foolvpn.me
+        Host: ava.game.naver.com.lsvly.dpdns.org
     udp: true
-  - name: 🇸🇬 Alibaba Cloud LLC WS TLS [47.245.95.160]
+  - name: (SG)+Digitalocean,+LLC+🇸🇬
     server: ava.game.naver.com
     port: 443
     type: vless
-    uuid: fc60147e-76b8-4bc5-b691-90b2da79e3d2
+    uuid: 6419ee44-1d75-489f-8195-6978c6522b71
     cipher: auto
     tls: true
     skip-cert-verify: true
-    servername: ava.game.naver.com.nautica.foolvpn.me
+    servername: ava.game.naver.com.lsvly.dpdns.org
     network: ws
     ws-opts:
-      path: /47.245.95.160-1443
+      path: /sg-do
       headers:
-        Host: ava.game.naver.com.nautica.foolvpn.me
+        Host: ava.game.naver.com.lsvly.dpdns.org
     udp: true
-  - name: 🇸🇬 Greencloud LLC WS TLS [194.127.193.240]
+  - name: (SG)+Oracle+Corporation+🇸🇬
     server: ava.game.naver.com
     port: 443
     type: vless
-    uuid: fc60147e-76b8-4bc5-b691-90b2da79e3d2
+    uuid: cc27059b-20cf-46d6-b09a-84f5c1143e01
     cipher: auto
     tls: true
     skip-cert-verify: true
-    servername: ava.game.naver.com.nautica.foolvpn.me
+    servername: ava.game.naver.com.lsvly.dpdns.org
     network: ws
     ws-opts:
-      path: /194.127.193.240-50791
+      path: /sg-orcl
       headers:
-        Host: ava.game.naver.com.nautica.foolvpn.me
+        Host: ava.game.naver.com.lsvly.dpdns.org
     udp: true
-  - name: 🇸🇬 Alibaba Cloud LLC WS TLS [47.236.119.190]
+  - name: (SG)+Akamai+Technologies+🇸🇬
     server: ava.game.naver.com
     port: 443
     type: vless
-    uuid: fc60147e-76b8-4bc5-b691-90b2da79e3d2
+    uuid: 089cdea0-42b9-4b0d-b062-a42094a529be
     cipher: auto
     tls: true
     skip-cert-verify: true
-    servername: ava.game.naver.com.nautica.foolvpn.me
+    servername: ava.game.naver.com.lsvly.dpdns.org
     network: ws
     ws-opts:
-      path: /47.236.119.190-51342
+      path: /sg-akm
       headers:
-        Host: ava.game.naver.com.nautica.foolvpn.me
+        Host: ava.game.naver.com.lsvly.dpdns.org
     udp: true
-  - name: 🇸🇬 Oracle Corporation WS TLS [129.150.49.58]
+  - name: (SG)+Microsoft+Corporation+🇸🇬
     server: ava.game.naver.com
     port: 443
     type: vless
-    uuid: fc60147e-76b8-4bc5-b691-90b2da79e3d2
+    uuid: 475ecf84-8232-4101-9bb6-2ffeeb645bfa
     cipher: auto
     tls: true
     skip-cert-verify: true
-    servername: ava.game.naver.com.nautica.foolvpn.me
+    servername: ava.game.naver.com.lsvly.dpdns.org
     network: ws
     ws-opts:
-      path: /129.150.49.58-18650
+      path: /sg-mc
       headers:
-        Host: ava.game.naver.com.nautica.foolvpn.me
+        Host: ava.game.naver.com.lsvly.dpdns.org
     udp: true
-  - name: 🇸🇬 UCUL-SG WS TLS [164.52.2.100]
+  - name: (SG)+OVH+SAS+🇸🇬
     server: ava.game.naver.com
     port: 443
     type: vless
-    uuid: fc60147e-76b8-4bc5-b691-90b2da79e3d2
+    uuid: f5cb13cc-0358-464a-9e0f-1ed53d8eca94
     cipher: auto
     tls: true
     skip-cert-verify: true
-    servername: ava.game.naver.com.nautica.foolvpn.me
+    servername: ava.game.naver.com.lsvly.dpdns.org
     network: ws
     ws-opts:
-      path: /164.52.2.100-443
+      path: /sg-ovh
       headers:
-        Host: ava.game.naver.com.nautica.foolvpn.me
+        Host: ava.game.naver.com.lsvly.dpdns.org
     udp: true
-  - name: 🇸🇬 UCUL-SG WS TLS [164.52.2.98]
+  - name: (SG)+Melbikomas+Uab+🇸🇬
     server: ava.game.naver.com
     port: 443
     type: vless
-    uuid: fc60147e-76b8-4bc5-b691-90b2da79e3d2
+    uuid: 6270c9b6-e7d1-4396-8225-81d863ca348a
     cipher: auto
     tls: true
     skip-cert-verify: true
-    servername: ava.game.naver.com.nautica.foolvpn.me
+    servername: ava.game.naver.com.lsvly.dpdns.org
     network: ws
     ws-opts:
-      path: /164.52.2.98-443
+      path: /sg-melbi
       headers:
-        Host: ava.game.naver.com.nautica.foolvpn.me
+        Host: ava.game.naver.com.lsvly.dpdns.org
     udp: true
-  - name: 🇸🇬 UCUL-SG WS TLS [164.52.2.99]
+  - name: (SG)+Misaka+Network+🇸🇬
     server: ava.game.naver.com
     port: 443
     type: vless
-    uuid: fc60147e-76b8-4bc5-b691-90b2da79e3d2
+    uuid: dc6c55ef-8fa1-4006-bcf2-0a2816199446
     cipher: auto
     tls: true
     skip-cert-verify: true
-    servername: ava.game.naver.com.nautica.foolvpn.me
+    servername: ava.game.naver.com.lsvly.dpdns.org
     network: ws
     ws-opts:
-      path: /164.52.2.99-443
+      path: /sg-msk
       headers:
-        Host: ava.game.naver.com.nautica.foolvpn.me
+        Host: ava.game.naver.com.lsvly.dpdns.org
+    udp: true
+  - name: (SG)+AKILE+LTD+🇸🇬
+    server: ava.game.naver.com
+    port: 443
+    type: vless
+    uuid: a720f826-91e5-42a7-beb6-4013962be030
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: ava.game.naver.com.lsvly.dpdns.org
+    network: ws
+    ws-opts:
+      path: /sg-akl
+      headers:
+        Host: ava.game.naver.com.lsvly.dpdns.org
+    udp: true
+  - name: (SG)+GREEN+FLOID+🇸🇬
+    server: ava.game.naver.com
+    port: 443
+    type: vless
+    uuid: 0bc40e70-0c64-41a4-8fc1-287d5c128591
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: ava.game.naver.com.lsvly.dpdns.org
+    network: ws
+    ws-opts:
+      path: /sg-green
+      headers:
+        Host: ava.game.naver.com.lsvly.dpdns.org
+    udp: true
+  - name: Random+ISP
+    server: ava.game.naver.com
+    port: 443
+    type: vless
+    uuid: d5d6c511-2ba1-488f-afbc-54540df9df0a
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: ava.game.naver.com.lsvly.dpdns.org
+    network: ws
+    ws-opts:
+      path: /random
+      headers:
+        Host: ava.game.naver.com.lsvly.dpdns.org
     udp: true
