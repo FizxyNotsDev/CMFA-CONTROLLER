@@ -157,7 +157,6 @@ proxy-groups:
       - ⚡ BEST-PING
       - ⛈️ CLOUDFLARE
       - ⛅ PREMIUM
-      
       - DIRECT
     icon: "https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/apps/select.png"   
 
