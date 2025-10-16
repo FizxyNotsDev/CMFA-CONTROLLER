@@ -219,7 +219,7 @@ proxy-groups:
     interval: 300
     tolerance: 1
     use:
-      - MIX
+      - CLOUDFLARE
     icon: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/icon/color/urltest.png"
     
 #𝙍𝙐𝙇𝙀𝙎  
