@@ -147,7 +147,7 @@ proxy-groups:
       - DIRECT
     use:
       - MIX
-    icon: "https://raw.githubusercontent.com/taamarin/any-icon/main/uploads/Tak%20berjudul4_20250820101526.png"   
+    icon: "https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/apps/select.png"   
 
   - name: 🗯 WA
     type: select
