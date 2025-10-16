@@ -1,31 +1,31 @@
 proxies:
-  - name: VLESS-WS-TLS-443-trial-6147403360-1760572607
+  - name: FREEMIUM-POINT
     server: ava.game.naver.com
     port: 443
     type: vless
-    uuid: 3f47a7ce-f127-4670-b834-f54f6e000967
+    uuid: d74b9c7a-b64f-4cb7-8b3f-014687a10ac1
     cipher: auto
     tls: true
     skip-cert-verify: true
     servername: ava.game.naver.com.1-1-1-1.my
     network: ws
     ws-opts:
-      path: /effective-configure-to-digital-transformation/buy-vless-ws-pm-telegram-at-synricha
+      path: /fast-build-to-web3/buy-vless-ws-pm-telegram-at-synricha
       headers:
         Host: ava.game.naver.com.1-1-1-1.my
     udp: true
-  - name: VLESS-WS-TLS-443-trial-6147403360-1760572630
+  - name: VVIP-IKD-SENEN
     server: ava.game.naver.com
     port: 443
     type: vless
-    uuid: 36391ee5-4b9a-4ff3-82f4-5b68cd323741
+    uuid: 82c287d9-b4eb-43fc-aa2c-ca5515509169
     cipher: auto
     tls: true
     skip-cert-verify: true
     servername: ava.game.naver.com.sing-box.shop
     network: ws
     ws-opts:
-      path: /strategic-visualize-to-big-data/buy-vless-ws-pm-telegram-at-synricha
+      path: /secret-techniques-to-mobile-app-development/buy-vless-ws-pm-telegram-at-synricha
       headers:
         Host: ava.game.naver.com.sing-box.shop
     udp: true
