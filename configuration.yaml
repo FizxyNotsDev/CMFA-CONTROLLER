@@ -195,7 +195,7 @@ proxy-groups:
       - DIRECT
     use:
       - MIX
-    icon: "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/chatgpt(balck).png"   
+    icon: "https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/apps/ChatGPT4.png"   
 
   - name: 🔞 NsfwBLOCK
     type: select
