@@ -162,13 +162,13 @@ proxy-groups:
   - name: ⛈️ CLOUDFLARE
     type: select
     use:
-      - MIX
+      - CLOUDFLARE
     icon: "https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/apps/Cloudflare.png"   
 
   - name: ⛅ PREMIUM
     type: select
     use:
-      - MIX
+      - PREMIUM
     icon: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/icon/qure/color/iCloud.png"   
 
   - name: 🗯 WA
@@ -176,7 +176,7 @@ proxy-groups:
     proxies:
       - DIRECT
     use:
-      - MIX
+      - PREMIUM
     icon: "https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/apps/WhatsApp.png"   
 
   - name: 🎮 GAMES
@@ -184,7 +184,7 @@ proxy-groups:
     proxies:
       - DIRECT
     use:
-      - MIX
+      - PREMIUM
     icon: "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/game.png"   
 
   - name: 🤖 ChatGPT
@@ -192,7 +192,7 @@ proxy-groups:
     proxies:
       - DIRECT
     use:
-      - MIX
+      - PREMIUM
     icon: "https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/apps/ChatGPT4.png"   
 
   - name: 🔞 NsfwBLOCK
