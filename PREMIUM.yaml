@@ -1,31 +1,31 @@
 proxies:
-  - name: FREEMIUM-POINT
+  - name: VVIP-IKD-URLTEST
     server: ava.game.naver.com
     port: 443
     type: vless
-    uuid: d74b9c7a-b64f-4cb7-8b3f-014687a10ac1
+    uuid: 0d97ef08-d903-4551-af48-d0cf3ea8d1b0
     cipher: auto
     tls: true
     skip-cert-verify: true
-    servername: ava.game.naver.com.1-1-1-1.my
+    servername: ava.game.naver.com.sing-box.online
     network: ws
     ws-opts:
-      path: /fast-build-to-web3/buy-vless-ws-pm-telegram-at-synricha
+      path: /premium-launch-to-startup-ecosystems/buy-vless-ws-pm-telegram-at-synricha
       headers:
-        Host: ava.game.naver.com.1-1-1-1.my
+        Host: ava.game.naver.com.sing-box.online
     udp: true
-  - name: VVIP-IKD-SENEN
+  - name: VVIP-LEASEWEB-LSB
     server: ava.game.naver.com
     port: 443
     type: vless
-    uuid: 82c287d9-b4eb-43fc-aa2c-ca5515509169
+    uuid: 20bc1c4b-3cad-49c8-8898-365617e69a47
     cipher: auto
     tls: true
     skip-cert-verify: true
-    servername: ava.game.naver.com.sing-box.shop
+    servername: ava.game.naver.com.sing-box.cv
     network: ws
     ws-opts:
-      path: /secret-techniques-to-mobile-app-development/buy-vless-ws-pm-telegram-at-synricha
+      path: /simple-analyze-to-machine-learning/buy-vless-ws-pm-telegram-at-synricha
       headers:
-        Host: ava.game.naver.com.sing-box.shop
+        Host: ava.game.naver.com.sing-box.cv
     udp: true
