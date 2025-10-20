@@ -242,15 +242,15 @@ rule-providers:
   rule_basicads:
     type: http
     behavior: domain
-    path: ./rule_provider/rule_basicads.yaml
-    url: >-
-      https://raw.githubusercontent.com/malikshi/open_clash/main/rule_provider/rule_basicads.yaml
+    format: mrs
+    path: ./rule_provider/rule_basicads.mrs
+    url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/category-ads-all.mrs
     interval: 43200
 
   oisd_nsfw🔞:
     type: http
     behavior: domain
-    format: text
-    path: "./rule_provider/oisd_nsfw.txt"
-    url: https://raw.githubusercontent.com/zzzt27/clash-AdsBlock/main/oisd_nsfw.txt
+    format: mrs
+    path: ./rule_provider/oisd_nsfw.mrs
+    url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/category-porn.mrs
     interval: 86400
