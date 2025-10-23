@@ -1,8 +1,8 @@
 proxies:
-  - name: SG ZENLA-1 [144.24.78.162]
+  - name: "SG ZENLA-1 🇸🇬 [144.24.78.162]"
+    type: vless
     server: ava.game.naver.com
     port: 443
-    type: vless
     uuid: 329a31ca-d298-4533-ac56-37e395708f81
     cipher: auto
     tls: true
@@ -14,10 +14,11 @@ proxies:
       headers:
         Host: ava.game.naver.com.cloud.fiex.my.id
     udp: true
-  - name: SG Alibaba Cloud - SG [47.74.254.191]
+
+  - name: "SG Alibaba Cloud 🇸🇬 [47.74.254.191]"
+    type: vless
     server: ava.game.naver.com
     port: 443
-    type: vless
     uuid: 329a31ca-d298-4533-ac56-37e395708f81
     cipher: auto
     tls: true
@@ -29,10 +30,11 @@ proxies:
       headers:
         Host: ava.game.naver.com.cloud.fiex.my.id
     udp: true
-  - name: SG Oracle Corporation [129.150.58.86]
+
+  - name: "SG Oracle Corporation 🇸🇬 [129.150.58.86]"
+    type: vless
     server: ava.game.naver.com
     port: 443
-    type: vless
     uuid: 329a31ca-d298-4533-ac56-37e395708f81
     cipher: auto
     tls: true
@@ -44,10 +46,11 @@ proxies:
       headers:
         Host: ava.game.naver.com.cloud.fiex.my.id
     udp: true
-  - name: SG Oracle Svenska AB [213.35.108.135]
+
+  - name: "SG Oracle Svenska AB 🇸🇬 [213.35.108.135]"
+    type: vless
     server: ava.game.naver.com
     port: 443
-    type: vless
     uuid: 329a31ca-d298-4533-ac56-37e395708f81
     cipher: auto
     tls: true
@@ -59,10 +62,11 @@ proxies:
       headers:
         Host: ava.game.naver.com.cloud.fiex.my.id
     udp: true
-  - name: SG DigitalOcean [178.128.80.43]
+
+  - name: "SG DigitalOcean 🇸🇬 [178.128.80.43]"
+    type: vless
     server: ava.game.naver.com
     port: 443
-    type: vless
     uuid: 329a31ca-d298-4533-ac56-37e395708f81
     cipher: auto
     tls: true
@@ -74,10 +78,11 @@ proxies:
       headers:
         Host: ava.game.naver.com.cloud.fiex.my.id
     udp: true
-  - name: SG Greencloud LLC [194.127.193.240]
+
+  - name: "SG Greencloud LLC 🇸🇬 [194.127.193.240]"
+    type: vless
     server: ava.game.naver.com
     port: 443
-    type: vless
     uuid: 329a31ca-d298-4533-ac56-37e395708f81
     cipher: auto
     tls: true
@@ -89,10 +94,11 @@ proxies:
       headers:
         Host: ava.game.naver.com.cloud.fiex.my.id
     udp: true
-  - name: SG Alibaba Cloud LLC [47.245.95.160]
+
+  - name: "SG Alibaba Cloud LLC 🇸🇬 [47.245.95.160]"
+    type: vless
     server: ava.game.naver.com
     port: 443
-    type: vless
     uuid: 329a31ca-d298-4533-ac56-37e395708f81
     cipher: auto
     tls: true
@@ -104,10 +110,11 @@ proxies:
       headers:
         Host: ava.game.naver.com.cloud.fiex.my.id
     udp: true
-  - name: SG Contabo GmbH [62.72.46.14]
+
+  - name: "SG Contabo GmbH 🇸🇬 [62.72.46.14]"
+    type: vless
     server: ava.game.naver.com
     port: 443
-    type: vless
     uuid: 329a31ca-d298-4533-ac56-37e395708f81
     cipher: auto
     tls: true
@@ -119,10 +126,11 @@ proxies:
       headers:
         Host: ava.game.naver.com.cloud.fiex.my.id
     udp: true
-  - name: SG Oracle Public Cloud [168.138.170.211]
+
+  - name: "SG Oracle Public Cloud 🇸🇬 [168.138.170.211]"
+    type: vless
     server: ava.game.naver.com
     port: 443
-    type: vless
     uuid: 329a31ca-d298-4533-ac56-37e395708f81
     cipher: auto
     tls: true
@@ -133,147 +141,4 @@ proxies:
       path: /168.138.170.211-53702
       headers:
         Host: ava.game.naver.com.cloud.fiex.my.id
-    udp: true
-  - name: SG Vultr Holdings [45.32.100.46]
-    server: ava.game.naver.com
-    port: 443
-    type: vless
-    uuid: 329a31ca-d298-4533-ac56-37e395708f81
-    cipher: auto
-    tls: true
-    skip-cert-verify: true
-    servername: ava.game.naver.com.cloud.fiex.my.id
-    network: ws
-    ws-opts:
-      path: /45.32.100.46-13802
-      headers:
-        Host: ava.game.naver.com.cloud.fiex.my.id
-    udp: true
-    skip-cert-verify: true
-    servername: ava.game.naver.com.lsvly.dpdns.org
-    network: ws
-    ws-opts:
-      path: /sg-orcl
-      headers:
-        Host: ava.game.naver.com.lsvly.dpdns.org
-    udp: true
-  - name: (SG)+Akamai+Technologies+🇸🇬
-    server: ava.game.naver.com
-    port: 443
-    type: vless
-    uuid: 089cdea0-42b9-4b0d-b062-a42094a529be
-    cipher: auto
-    tls: true
-    skip-cert-verify: true
-    servername: ava.game.naver.com.lsvly.dpdns.org
-    network: ws
-    ws-opts:
-      path: /sg-akm
-      headers:
-        Host: ava.game.naver.com.lsvly.dpdns.org
-    udp: true
-  - name: (SG)+Microsoft+Corporation+🇸🇬
-    server: ava.game.naver.com
-    port: 443
-    type: vless
-    uuid: 475ecf84-8232-4101-9bb6-2ffeeb645bfa
-    cipher: auto
-    tls: true
-    skip-cert-verify: true
-    servername: ava.game.naver.com.lsvly.dpdns.org
-    network: ws
-    ws-opts:
-      path: /sg-mc
-      headers:
-        Host: ava.game.naver.com.lsvly.dpdns.org
-    udp: true
-  - name: (SG)+OVH+SAS+🇸🇬
-    server: ava.game.naver.com
-    port: 443
-    type: vless
-    uuid: f5cb13cc-0358-464a-9e0f-1ed53d8eca94
-    cipher: auto
-    tls: true
-    skip-cert-verify: true
-    servername: ava.game.naver.com.lsvly.dpdns.org
-    network: ws
-    ws-opts:
-      path: /sg-ovh
-      headers:
-        Host: ava.game.naver.com.lsvly.dpdns.org
-    udp: true
-  - name: (SG)+Melbikomas+Uab+🇸🇬
-    server: ava.game.naver.com
-    port: 443
-    type: vless
-    uuid: 6270c9b6-e7d1-4396-8225-81d863ca348a
-    cipher: auto
-    tls: true
-    skip-cert-verify: true
-    servername: ava.game.naver.com.lsvly.dpdns.org
-    network: ws
-    ws-opts:
-      path: /sg-melbi
-      headers:
-        Host: ava.game.naver.com.lsvly.dpdns.org
-    udp: true
-  - name: (SG)+Misaka+Network+🇸🇬
-    server: ava.game.naver.com
-    port: 443
-    type: vless
-    uuid: dc6c55ef-8fa1-4006-bcf2-0a2816199446
-    cipher: auto
-    tls: true
-    skip-cert-verify: true
-    servername: ava.game.naver.com.lsvly.dpdns.org
-    network: ws
-    ws-opts:
-      path: /sg-msk
-      headers:
-        Host: ava.game.naver.com.lsvly.dpdns.org
-    udp: true
-  - name: (SG)+AKILE+LTD+🇸🇬
-    server: ava.game.naver.com
-    port: 443
-    type: vless
-    uuid: a720f826-91e5-42a7-beb6-4013962be030
-    cipher: auto
-    tls: true
-    skip-cert-verify: true
-    servername: ava.game.naver.com.lsvly.dpdns.org
-    network: ws
-    ws-opts:
-      path: /sg-akl
-      headers:
-        Host: ava.game.naver.com.lsvly.dpdns.org
-    udp: true
-  - name: (SG)+GREEN+FLOID+🇸🇬
-    server: ava.game.naver.com
-    port: 443
-    type: vless
-    uuid: 0bc40e70-0c64-41a4-8fc1-287d5c128591
-    cipher: auto
-    tls: true
-    skip-cert-verify: true
-    servername: ava.game.naver.com.lsvly.dpdns.org
-    network: ws
-    ws-opts:
-      path: /sg-green
-      headers:
-        Host: ava.game.naver.com.lsvly.dpdns.org
-    udp: true
-  - name: Random+ISP
-    server: ava.game.naver.com
-    port: 443
-    type: vless
-    uuid: d5d6c511-2ba1-488f-afbc-54540df9df0a
-    cipher: auto
-    tls: true
-    skip-cert-verify: true
-    servername: ava.game.naver.com.lsvly.dpdns.org
-    network: ws
-    ws-opts:
-      path: /random
-      headers:
-        Host: ava.game.naver.com.lsvly.dpdns.org
     udp: true
