@@ -1,31 +1,31 @@
 proxies:
-  - name: VVIP-IKD-URLTEST
+  - name: VLESS-WS-TLS-443-trial-6020705139-1761008630
     server: ava.game.naver.com
     port: 443
     type: vless
-    uuid: 0d97ef08-d903-4551-af48-d0cf3ea8d1b0
+    uuid: 5c92e34c-b287-40d2-b8f1-fcd7213ee408
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: ava.game.naver.com.sing-box.lol
+    network: ws
+    ws-opts:
+      path: /revolutionary-tricks-to-tech-trends/buy-vless-ws-pm-telegram-at-synricha
+      headers:
+        Host: ava.game.naver.com.sing-box.lol
+    udp: true
+  - name: VLESS-WS-TLS-443-trial-6020705139-1761008662
+    server: ava.game.naver.com
+    port: 443
+    type: vless
+    uuid: 7ff4847c-37ed-4cde-92cd-4da29728d8f8
     cipher: auto
     tls: true
     skip-cert-verify: true
     servername: ava.game.naver.com.sing-box.online
     network: ws
     ws-opts:
-      path: /premium-launch-to-startup-ecosystems/buy-vless-ws-pm-telegram-at-synricha
+      path: /exclusive-approaches-to-tech-reviews/buy-vless-ws-pm-telegram-at-synricha
       headers:
         Host: ava.game.naver.com.sing-box.online
-    udp: true
-  - name: VVIP-LEASEWEB-LSB
-    server: ava.game.naver.com
-    port: 443
-    type: vless
-    uuid: 20bc1c4b-3cad-49c8-8898-365617e69a47
-    cipher: auto
-    tls: true
-    skip-cert-verify: true
-    servername: ava.game.naver.com.sing-box.cv
-    network: ws
-    ws-opts:
-      path: /simple-analyze-to-machine-learning/buy-vless-ws-pm-telegram-at-synricha
-      headers:
-        Host: ava.game.naver.com.sing-box.cv
     udp: true
