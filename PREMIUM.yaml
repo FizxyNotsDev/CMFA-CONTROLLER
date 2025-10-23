@@ -1,31 +1,31 @@
 proxies:
-  - name: VLESS-WS-TLS-443-trial-6020705139-1761008630
+  - name: VLESS-WS-TLS-443-trial-6020705139-1761209460
     server: ava.game.naver.com
     port: 443
     type: vless
-    uuid: 5c92e34c-b287-40d2-b8f1-fcd7213ee408
+    uuid: 34604466-4ae9-4f58-abd6-c675708f5173
     cipher: auto
     tls: true
     skip-cert-verify: true
-    servername: ava.game.naver.com.sing-box.lol
+    servername: ava.game.naver.com.sing-box.cv
     network: ws
     ws-opts:
-      path: /revolutionary-tricks-to-tech-trends/buy-vless-ws-pm-telegram-at-synricha
+      path: /top-visualize-to-web3/buy-vless-ws-pm-telegram-at-synricha
       headers:
-        Host: ava.game.naver.com.sing-box.lol
+        Host: ava.game.naver.com.sing-box.cv
     udp: true
-  - name: VLESS-WS-TLS-443-trial-6020705139-1761008662
+  - name: VLESS-WS-TLS-443-trial-6020705139-1761209485
     server: ava.game.naver.com
     port: 443
     type: vless
-    uuid: 7ff4847c-37ed-4cde-92cd-4da29728d8f8
+    uuid: f19b6913-d72b-411a-8bb0-deaeedcb11dd
     cipher: auto
     tls: true
     skip-cert-verify: true
     servername: ava.game.naver.com.sing-box.online
     network: ws
     ws-opts:
-      path: /exclusive-approaches-to-tech-reviews/buy-vless-ws-pm-telegram-at-synricha
+      path: /simple-tricks-to-tech-reviews/buy-vless-ws-pm-telegram-at-synricha
       headers:
         Host: ava.game.naver.com.sing-box.online
     udp: true
