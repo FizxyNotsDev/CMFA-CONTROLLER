@@ -246,7 +246,7 @@ rules:
   - AND,((NETWORK,udp),(OR,((DST-PORT,443/80),(RULE-SET,mrs-instagram)))),REJECT
   - AND,((NETWORK,udp),(OR,((DST-PORT,443/80),(RULE-SET,mrs-tiktok)))),REJECT
   - NETWORK,udp,⛅ PREMIUM
-  - IN-TYPE,inner,⛈️ CLOUDFLARE
+  - IN-TYPE,inner,🎛️ SELECTOR
 #AdsBLOCK
   - RULE-SET,rule_basicads,🛑 AdsBLOCK
 #NsfwBlock
