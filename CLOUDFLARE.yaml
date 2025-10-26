@@ -1,144 +1,144 @@
 proxies:
   - name: "SG ZENLA-1 🇸🇬 [144.24.78.162]"
     type: vless
-    server: ava.game.naver.com
+    server: 104.17.3.81
     port: 443
     uuid: 329a31ca-d298-4533-ac56-37e395708f81
     cipher: auto
     tls: true
     skip-cert-verify: true
-    servername: ava.game.naver.com.cloud.fiex.my.id
+    servername: cloud.fiex.my.id
     network: ws
     ws-opts:
       path: /144.24.78.162-443
       headers:
-        Host: ava.game.naver.com.cloud.fiex.my.id
+        Host: cloud.fiex.my.id
     udp: true
 
   - name: "SG Alibaba Cloud 🇸🇬 [47.74.254.191]"
     type: vless
-    server: ava.game.naver.com
+    server: 104.17.3.81
     port: 443
     uuid: 329a31ca-d298-4533-ac56-37e395708f81
     cipher: auto
     tls: true
     skip-cert-verify: true
-    servername: ava.game.naver.com.cloud.fiex.my.id
+    servername: cloud.fiex.my.id
     network: ws
     ws-opts:
       path: /47.74.254.191-8900
       headers:
-        Host: ava.game.naver.com.cloud.fiex.my.id
+        Host: cloud.fiex.my.id
     udp: true
 
   - name: "SG Oracle Corporation 🇸🇬 [129.150.58.86]"
     type: vless
-    server: ava.game.naver.com
+    server: 104.17.3.81
     port: 443
     uuid: 329a31ca-d298-4533-ac56-37e395708f81
     cipher: auto
     tls: true
     skip-cert-verify: true
-    servername: ava.game.naver.com.cloud.fiex.my.id
+    servername: cloud.fiex.my.id
     network: ws
     ws-opts:
       path: /129.150.58.86-57621
       headers:
-        Host: ava.game.naver.com.cloud.fiex.my.id
+        Host: cloud.fiex.my.id
     udp: true
 
   - name: "SG Oracle Svenska AB 🇸🇬 [213.35.108.135]"
     type: vless
-    server: ava.game.naver.com
+    server: 104.17.3.81
     port: 443
     uuid: 329a31ca-d298-4533-ac56-37e395708f81
     cipher: auto
     tls: true
     skip-cert-verify: true
-    servername: ava.game.naver.com.cloud.fiex.my.id
+    servername: cloud.fiex.my.id
     network: ws
     ws-opts:
       path: /213.35.108.135-12596
       headers:
-        Host: ava.game.naver.com.cloud.fiex.my.id
+        Host: cloud.fiex.my.id
     udp: true
 
   - name: "SG DigitalOcean 🇸🇬 [178.128.80.43]"
     type: vless
-    server: ava.game.naver.com
+    server: 104.17.3.81
     port: 443
     uuid: 329a31ca-d298-4533-ac56-37e395708f81
     cipher: auto
     tls: true
     skip-cert-verify: true
-    servername: ava.game.naver.com.cloud.fiex.my.id
+    servername: cloud.fiex.my.id
     network: ws
     ws-opts:
       path: /178.128.80.43-443
       headers:
-        Host: ava.game.naver.com.cloud.fiex.my.id
+        Host: cloud.fiex.my.id
     udp: true
 
   - name: "SG Greencloud LLC 🇸🇬 [194.127.193.240]"
     type: vless
-    server: ava.game.naver.com
+    server: 104.17.3.81
     port: 443
     uuid: 329a31ca-d298-4533-ac56-37e395708f81
     cipher: auto
     tls: true
     skip-cert-verify: true
-    servername: ava.game.naver.com.cloud.fiex.my.id
+    servername: cloud.fiex.my.id
     network: ws
     ws-opts:
       path: /194.127.193.240-50791
       headers:
-        Host: ava.game.naver.com.cloud.fiex.my.id
+        Host: cloud.fiex.my.id
     udp: true
 
   - name: "SG Alibaba Cloud LLC 🇸🇬 [47.245.95.160]"
     type: vless
-    server: ava.game.naver.com
+    server: 104.17.3.81
     port: 443
     uuid: 329a31ca-d298-4533-ac56-37e395708f81
     cipher: auto
     tls: true
     skip-cert-verify: true
-    servername: ava.game.naver.com.cloud.fiex.my.id
+    servername: cloud.fiex.my.id
     network: ws
     ws-opts:
       path: /47.245.95.160-1443
       headers:
-        Host: ava.game.naver.com.cloud.fiex.my.id
+        Host: cloud.fiex.my.id
     udp: true
 
   - name: "SG Contabo GmbH 🇸🇬 [62.72.46.14]"
     type: vless
-    server: ava.game.naver.com
+    server: 104.17.3.81
     port: 443
     uuid: 329a31ca-d298-4533-ac56-37e395708f81
     cipher: auto
     tls: true
     skip-cert-verify: true
-    servername: ava.game.naver.com.cloud.fiex.my.id
+    servername: cloud.fiex.my.id
     network: ws
     ws-opts:
       path: /62.72.46.14-8443
       headers:
-        Host: ava.game.naver.com.cloud.fiex.my.id
+        Host: cloud.fiex.my.id
     udp: true
 
   - name: "SG Oracle Public Cloud 🇸🇬 [168.138.170.211]"
     type: vless
-    server: ava.game.naver.com
+    server: 104.17.3.81
     port: 443
     uuid: 329a31ca-d298-4533-ac56-37e395708f81
     cipher: auto
     tls: true
     skip-cert-verify: true
-    servername: ava.game.naver.com.cloud.fiex.my.id
+    servername: cloud.fiex.my.id
     network: ws
     ws-opts:
       path: /168.138.170.211-53702
       headers:
-        Host: ava.game.naver.com.cloud.fiex.my.id
+        Host: cloud.fiex.my.id
     udp: true
