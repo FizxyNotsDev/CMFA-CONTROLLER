@@ -216,35 +216,8 @@ rule-providers:
     url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/category-porn.mrs
     interval: 86400
 
-  mrs-instagram:
-    type: http
-    url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/instagram.mrs"
-    format: mrs
-    behavior: domain
-    path: ruleset/Instagram.mrs
-    interval: 36000
-    
-  mrs-youtube:
-    type: http
-    url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/youtube.mrs"
-    format: mrs
-    behavior: domain
-    path: ruleset/YouTube.mrs
-    interval: 36000
-    
-  mrs-tiktok:
-    type: http
-    url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/tiktok.mrs"
-    format: mrs
-    behavior: domain
-    path: ruleset/TikTok.mrs
-    interval: 36000
-    
 #𝙍𝙐𝙇𝙀𝙎  
 rules:
-  - AND,((NETWORK,udp),(OR,((DST-PORT,443/80),(RULE-SET,mrs-youtube)))),REJECT
-  - AND,((NETWORK,udp),(OR,((DST-PORT,443/80),(RULE-SET,mrs-instagram)))),REJECT
-  - AND,((NETWORK,udp),(OR,((DST-PORT,443/80),(RULE-SET,mrs-tiktok)))),REJECT
   - NETWORK,udp,⛅ PREMIUM
   - IN-TYPE,inner,🎛️ SELECTOR
 #AdsBLOCK
