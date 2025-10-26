@@ -126,28 +126,6 @@ dns:
     - '*.mcdn.bilivideo.cn'
     - +.media.dssott.com
 
-#𝙋𝙍𝙊𝙓𝙔 𝙋𝙍𝙊𝙑𝙄𝘿𝙀𝙍𝙎
-proxy-providers:
-  CLOUDFLARE:
-    type: http
-    url: "https://raw.githubusercontent.com/FizxyNotsDev/CMFA-CONTROLLER/refs/heads/main/CLOUDFLARE.yaml"
-    path: ./proxy_providers/CLOUDFLARE.yaml
-    health-check:
-      enable: true
-      url: "http://www.gstatic.com/generate_204"
-      interval: 36000
-      icon: "https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/apps/Cloudflare.png"
-      
-  PREMIUM:
-    type: http
-    url: "https://raw.githubusercontent.com/FizxyNotsDev/CMFA-CONTROLLER/refs/heads/main/PREMIUM.yaml"
-    path: ./proxy_providers/PREMIUM.yaml
-    health-check:
-      enable: true
-      url: "http://www.gstatic.com/generate_204"
-      interval: 36000
-      icon: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/icon/qure/color/iCloud.png"
-
 #𝙋𝙍𝙊𝙓𝙔 𝙂𝙍𝙊𝙐𝙋𝙎  
 proxy-groups:
   - name: 🎛️ SELECTOR
@@ -169,31 +147,7 @@ proxy-groups:
     type: select
     use:
       - PREMIUM
-    icon: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/icon/qure/color/iCloud.png"   
-
-  - name: 🗯 WA
-    type: select
-    proxies:
-      - DIRECT
-    use:
-      - PREMIUM
-    icon: "https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/apps/WhatsApp.png"   
-
-  - name: 🎮 GAMES
-    type: select
-    proxies:
-      - DIRECT
-    use:
-      - PREMIUM
-    icon: "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/game.png"   
-
-  - name: 🤖 ChatGPT
-    type: select
-    proxies:
-      - DIRECT
-    use:
-      - PREMIUM
-    icon: "https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/apps/ChatGPT4.png"   
+    icon: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/icon/qure/color/iCloud.png"      
 
   - name: 🔞 NsfwBLOCK
     type: select
@@ -221,22 +175,29 @@ proxy-groups:
     use:
       - CLOUDFLARE
     icon: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/icon/color/urltest.png"
-    
-#𝙍𝙐𝙇𝙀𝙎  
-rules:
-#WA
-  - PROCESS-NAME,com.whatsapp,🗯 WA
-#Game
-  - PROCESS-NAME,com.mobilechess.gp,🎮 GAMES
-#ChatGPT
-  - PROCESS-NAME,com.openai.chatgpt,🤖 ChatGPT
-#AdsBLOCK
-  - RULE-SET,rule_basicads,🛑 AdsBLOCK
-#NsfwBlock
-  - RULE-SET,oisd_nsfw🔞,🔞 NsfwBLOCK
-#Selector
-  - MATCH,🎛️ SELECTOR  
-  
+
+#𝙋𝙍𝙊𝙓𝙔 𝙋𝙍𝙊𝙑𝙄𝘿𝙀𝙍𝙎
+proxy-providers:
+  CLOUDFLARE:
+    type: http
+    url: "https://raw.githubusercontent.com/FizxyNotsDev/CMFA-CONTROLLER/refs/heads/main/CLOUDFLARE.yaml"
+    path: ./proxy_providers/CLOUDFLARE.yaml
+    health-check:
+      enable: true
+      url: "http://www.gstatic.com/generate_204"
+      interval: 36000
+      icon: "https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/apps/Cloudflare.png"
+      
+  PREMIUM:
+    type: http
+    url: "https://raw.githubusercontent.com/FizxyNotsDev/CMFA-CONTROLLER/refs/heads/main/PREMIUM.yaml"
+    path: ./proxy_providers/PREMIUM.yaml
+    health-check:
+      enable: true
+      url: "http://www.gstatic.com/generate_204"
+      interval: 36000
+      icon: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/icon/qure/color/iCloud.png"  
+      
 #𝙍𝙐𝙇𝙀 𝙋𝙍𝙊𝙑𝙄𝘿𝙀𝙍𝙎
 rule-providers:
   rule_basicads:
@@ -254,3 +215,41 @@ rule-providers:
     path: ./rule_provider/oisd_nsfw.mrs
     url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/category-porn.mrs
     interval: 86400
+
+  mrs-instagram:
+    type: http
+    url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/instagram.mrs"
+    format: mrs
+    behavior: domain
+    path: ruleset/Instagram.mrs
+    interval: 36000
+    
+  mrs-youtube:
+    type: http
+    url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/youtube.mrs"
+    format: mrs
+    behavior: domain
+    path: ruleset/YouTube.mrs
+    interval: 36000
+    
+  mrs-tiktok:
+    type: http
+    url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/tiktok.mrs"
+    format: mrs
+    behavior: domain
+    path: ruleset/TikTok.mrs
+    interval: 36000
+    
+#𝙍𝙐𝙇𝙀𝙎  
+rules:
+  - AND,((NETWORK,udp),(OR,((DST-PORT,443/80),(RULE-SET,mrs-youtube)))),REJECT
+  - AND,((NETWORK,udp),(OR,((DST-PORT,443/80),(RULE-SET,mrs-instagram)))),REJECT
+  - AND,((NETWORK,udp),(OR,((DST-PORT,443/80),(RULE-SET,mrs-tiktok)))),REJECT
+  - NETWORK,udp,⛅ PREMIUM
+  - IN-TYPE,inner,⛈️ CLOUDFLARE
+#AdsBLOCK
+  - RULE-SET,rule_basicads,🛑 AdsBLOCK
+#NsfwBlock
+  - RULE-SET,oisd_nsfw🔞,🔞 NsfwBLOCK
+#Selector
+  - MATCH,🎛️ SELECTOR  
