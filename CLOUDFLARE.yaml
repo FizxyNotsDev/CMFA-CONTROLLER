@@ -142,19 +142,3 @@ proxies:
       headers:
         Host: cloud.fiex.my.id
     udp: true
-
-  - name: "SG Oracle Public Cloud 🇸🇬 [168.138.170.211]"
-    type: vless
-    server: 104.17.3.81
-    port: 80
-    uuid: 329a31ca-d298-4533-ac56-37e395708f81
-    cipher: auto
-    tls: false
-    skip-cert-verify: true
-    servername: cloud.fiex.my.id
-    network: ws
-    ws-opts:
-      path: /168.138.170.211-53702
-      headers:
-        Host: cloud.fiex.my.id
-    udp: true
