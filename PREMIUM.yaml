@@ -1,31 +1,16 @@
 proxies:
-  - name: VLESS-WS-TLS-443-trial-6020705139-1761209460
-    server: ava.game.naver.com
-    port: 443
+  - name: IKD
+    server: 104.17.3.81
+    port: 80
     type: vless
-    uuid: 34604466-4ae9-4f58-abd6-c675708f5173
+    uuid: ebda2726-1cd4-48b8-ad32-9e5204813554
     cipher: auto
-    tls: true
+    tls: false
     skip-cert-verify: true
-    servername: ava.game.naver.com.sing-box.cv
+    servername: sing-box.web.id
     network: ws
     ws-opts:
-      path: /top-visualize-to-web3/buy-vless-ws-pm-telegram-at-synricha
+      path: /essential-learn-to-devops/buy-vless-ws-pm-telegram-at-synricha
       headers:
-        Host: ava.game.naver.com.sing-box.cv
-    udp: true
-  - name: VLESS-WS-TLS-443-trial-6020705139-1761209485
-    server: ava.game.naver.com
-    port: 443
-    type: vless
-    uuid: f19b6913-d72b-411a-8bb0-deaeedcb11dd
-    cipher: auto
-    tls: true
-    skip-cert-verify: true
-    servername: ava.game.naver.com.sing-box.online
-    network: ws
-    ws-opts:
-      path: /simple-tricks-to-tech-reviews/buy-vless-ws-pm-telegram-at-synricha
-      headers:
-        Host: ava.game.naver.com.sing-box.online
+        Host: sing-box.web.id
     udp: true
