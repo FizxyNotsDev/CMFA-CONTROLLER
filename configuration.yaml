@@ -218,9 +218,9 @@ rule-providers:
 
 #𝙍𝙐𝙇𝙀𝙎  
 rules:
-  - NETWORK,udp,⛅ PREMIUM
-  - NETWORK,tcp,⛈️ CLOUDFLARE
   - RULE-SET,rule_basicads,🛑 AdsBLOCK
   - RULE-SET,oisd_nsfw🔞,🔞 NsfwBLOCK
+  - NETWORK,udp,⛅ PREMIUM
+  - NETWORK,tcp,⛈️ CLOUDFLARE
   - IN-TYPE,inner,🎛️ SELECTOR
   - MATCH,🎛️ SELECTOR  
