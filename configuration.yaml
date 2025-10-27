@@ -219,10 +219,8 @@ rule-providers:
 #𝙍𝙐𝙇𝙀𝙎  
 rules:
   - NETWORK,udp,⛅ PREMIUM
-  - IN-TYPE,inner,🎛️ SELECTOR
-#AdsBLOCK
+  - NETWORK,tcp,⛈️ CLOUDFLARE
   - RULE-SET,rule_basicads,🛑 AdsBLOCK
-#NsfwBlock
   - RULE-SET,oisd_nsfw🔞,🔞 NsfwBLOCK
-#Selector
+  - IN-TYPE,inner,🎛️ SELECTOR
   - MATCH,🎛️ SELECTOR  
