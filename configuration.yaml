@@ -13,6 +13,18 @@ bind-address: '*'
 unified-delay: true
 profile:
   store-selected: true
+tun:
+  enable: true
+  stack: system # Gunakan 'system' untuk kinerja umum. Bisa coba 'gvisor' jika 'system' bermasalah.
+  auto-route: true
+  
+  # Aktifkan DNS Hijack (Mengalihkan semua DNS ke DNS internal Clash)
+  dns-hijack:
+    - any:53        # Hijack UDP port 53
+    - tcp://any:53 # Hijack TCP port 53 (Penting untuk mengatasi enkripsi DNS)
+    
+  # Aktifkan Sniffing untuk mendukung rule berbasis domain pada koneksi Fake-IP
+  sniff: true
 dns:
   enable: true
   ipv6: false
