@@ -60,16 +60,9 @@ dns:
   use-hosts: true
   enhanced-mode: fake-ip
   fake-ip-range: 198.18.0.1/16
-  fake-ip-filter:
-    - '*.lan'
-    - '*.local'
-    - '*.ntp.*'
-    - 'time.*'
-    - 'ntp.*'
-    - 'pool.ntp.org'
-    - 'localhost'
-    - '*.google.com'
-    - '*.facebook.com'
+fake-ip-filter:
+  - '*.lan'
+  - '*.ntp.*'
   nameserver:
   - 8.8.8.8
   - 1.1.1.1
