@@ -64,10 +64,18 @@ dns:
   - '*.lan'
   - '*.ntp.*'
   nameserver:
-  - 8.8.8.8
-  - 1.1.1.1
-  proxy-server-nameserver:
-  - 112.215.203.246
+    - 8.8.8.8
+    - 1.0.0.1
+    - https://dns.google/dns-query
+  fallback:
+    - 1.1.1.1
+    - 8.8.4.4
+    - https://cloudflare-dns.com/dns-query
+    - 112.215.203.254
+  default-nameserver:
+    - 8.8.8.8
+    - 1.1.1.1
+    - 112.215.203.254
   respect-rules: true
 #𝙋𝙍𝙊𝙓𝙔 𝙂𝙍𝙊𝙐𝙋𝙎  
 proxy-groups:
