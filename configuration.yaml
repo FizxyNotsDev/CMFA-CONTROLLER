@@ -17,7 +17,7 @@ tun:
   - any:53
   - tcp://any:53
   auto-route: true
-  strict-route: false
+  strict-route: true
   auto-redirect: true
   auto-detect-interface: true
 profile:
@@ -27,7 +27,7 @@ sniffer:
   enable: true
   force-dns-mapping: true
   parse-pure-ip: true
-  override-destination: false
+  override-destination: true
   sniff:
     QUIC:
       ports:
@@ -53,9 +53,6 @@ dns:
   prefer-h3: false
   ipv6: false
   ipv6-timeout: 300
-  default-nameserver:
-  - 8.8.8.8
-  - 8.8.4.4
   listen: 0.0.0.0:1053
   use-hosts: true
   enhanced-mode: fake-ip
